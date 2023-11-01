@@ -1,0 +1,97 @@
+:root {
+    --me:rgb(214, 194, 194);
+    --projects:rgb(125, 97, 97);
+    --contact:rgb(149, 149, 166);
+}
+
+#navbar {
+    position:fixed;
+    top: 0;
+    background-color: rgb(6, 6, 6, .50);
+    right: 0;
+    display: flex;
+    justify-content:space-evenly;
+    width: 300px;
+    align-content: center;
+    margin-left:10px;
+}
+
+.h-block {
+    display: flex;
+}
+
+
+.blocker{
+    width:375px;
+}
+
+header{
+    color:white;
+}
+
+body {
+    background: linear-gradient(
+        90deg,
+        black,
+        gray
+    );
+}
+
+.main {
+    color:aliceblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.about-me h2 {
+    color:var(--me)
+}
+
+.ss1 {
+    color:var(--me);
+}
+.ss2 {
+    color: var(--projects);
+}
+.ss3 {
+    color:var(--contact)
+}
+
+#about-me, #projects, #contact {
+    height: 100vh;
+}
+
+.projects img {
+    height: 200px;
+    width: 300px;
+}
+
+.figs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:20px;
+    height: 600px;
+}
+
+.projects h2 {
+    width:100%;
+    color:var(--projects);
+    text-align:center;
+}
+
+#profile-link {
+    color:white;
+}
+
+@media (max-width: 500px;){
+    h2{
+        color:blue
+    }
+}
